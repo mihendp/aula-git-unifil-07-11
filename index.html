@@ -7,11 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Título</h1>
+    <h1  id="muda"  onclick="clique()">Clique aqui para mudar a cor do título</h1>
 
     <ul>
         <li>Engenharia de Software</li>
         <li>Ciência da computação</li>
     </ul>
 </body>
+
+<script>
+    const x = document.getElementById("muda")
+
+    function setColor(color){
+        x.style.color = x.style.color == color ? 'black' : color
+    }
+
+    function clique(){
+        setColor('red')
+    }
+
+</script>
 </html>
